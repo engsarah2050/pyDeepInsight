@@ -13,8 +13,7 @@ from scipy.optimize import linear_sum_assignment
 from matplotlib import pyplot as plt
 import inspect
 
-from pyDeepInsight.utils import asymmetric_greedy_search
-
+from .utils._ags import asymmetric_greedy_search
 
 class ManifoldLearner(Protocol):
     def fit_transform(self: 'ManifoldLearner',
